@@ -19,9 +19,10 @@
     </head>
     <body>
     
-     
+   
+    
 		<!-- Start Main Navigation -->
-        <div class="header-container" id="masthead">
+        <div class="header-container">
             <header class="wrapper clearfix">
             	<a href="index.html" class="logo"><img src="img/logo.png" alt="Logo" /></a>
                 <nav>
@@ -36,18 +37,6 @@
                     </ul>                	
                 </nav>
             </header>
-            
-            
-            <!-- Start Masthead -->
-            <div class="wrapper clearfix">
-            	<div class="cta two-third">
-            		<h1>Dexter Inside!</h1> 
-            		<h3>Because There is a Dexter Inside Everyone!</h3>
-            		<h5>— Official Hacker Space @ IIIT Delhi</h5>
-            		<br/>
-            		<p>No more same old boring electronics workshops, we are here to set a new trend.</br> Be ready to witness something great..</p>
-            	</div>   	   
-            </div>
         </div>
         
         
@@ -59,50 +48,46 @@
             	
             	            	
             	<!-- Start Main Content -->
-                <div class="main-content full">
+                <div class="main-content">
                 	<div class="clearfix">
                 		
-                		<!-- Columns Thirds --> 
-                        <div class="clearfix">
-                        <div class="third">	
-                        	<h2>About Us</h2>
-                        	<p>We are a collaborative makerspace established on April 18th 2014. We are focussed on 
-
-providing free access to electronics instruments at any time of the day. Our focus is to motivate 
-
-out of the box ideas and transform those ideas into reality.
-
-</p>
-                        </div>
-                        
-                        <div class="third">
-                        	<h2>What I do</h2>
-                        	We give you the freedom to explore the space and the tools without any questions asked, it 
-
-is open to anyone with a passion within to build something new on his own. We also provide 
-
-guidance towards your projects within our space.
-</p>
-                        </div>
-                        
-                        <div class="third last">
-                        	<h2>Get in touch</h2>
-                        	<p>Apart from the space we also conduct workshops/tutorials on various engineering topics. Which 
-
-you can refer to in our “Upcoming Events” page. 
-
-We also encourage you to share your knowledge with the community by conducting workshops 
-
-in our space. Please contact us if you are interested in conducting one.</p>
-                        	<p><a href="contact.html" class="more">Send Us a Message!</a></p>
-                        </div>
-                        </div>
-                        
-                                                                       
+                		<!-- Headings -->  
+                		<h1>Contact Us</h1>
+                		<p class="lead">For any queries please fill the form below. </p>
+                		
+                			<p class="">Our representative will get in touch with you shortly</p>
+                		
+                		
+                		<form id="contactform" action="php/processForm.php" method="post">
+                			<table width="100%" class="tableless">
+                				<tr><td><input type="text" id="name" name="name" placeholder="Enter your name" autofocus /></td></tr>
+                				<tr><td><input type="email" id="email" name="email" placeholder="Your Email Id" /></td></tr>
+                				<tr><td><textarea id="message" name="message" rows="5" cols="20" placeholder="Your Message to Us?"></textarea></td></tr>
+                						
+                				<tr><td><input name="button" class="btn" type="submit" value="Send Message" id="send" /><br/></td></tr>
+                			</table>
+                		</form>
+                		<div id="response"></div>
+                			
+                			                                   
 					<!-- Finish Main Content -->
                 	</div>    
                 </div>
 				
+				
+				 <!-- Start Main Sidebar -->
+				<aside class="right-aside">
+				<b>Email:</b> contact@dexterinside.com
+				</br>
+				<b>Address:</b> LR3, Library & Information Center, IIIT Delhi
+				   
+				   </br><b>Phone:</b> +91-9911-383-063
+				   <hr class="dots"/> 
+				   Reach Us!
+				   
+				   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3504.7911696176247!2d77.272637!3d28.545996000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIIIT+Delhi!5e0!3m2!1sen!2sin!4v1420222605113" width="250" height="300" frameborder="0" style="border:0"></iframe>
+				    	
+				</aside>
 				
 				
 
@@ -110,6 +95,7 @@ in our space. Please contact us if you are interested in conducting one.</p>
         </div> <!-- #main-container -->
 
 
+		
 		<!-- Start Footer -->
 		<footer>
 			<div class="main wrapper clearfix">
@@ -127,7 +113,7 @@ in our space. Please contact us if you are interested in conducting one.</p>
 		</footer>
  
 
-		
+
 		<!-- Start Scripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
@@ -135,9 +121,22 @@ in our space. Please contact us if you are interested in conducting one.</p>
 		<script type="text/javascript" src="js/fitvids.min.js"></script>
 		<script type="text/javascript" src="js/jquery.widowFix-1.3.2.min.js"></script> 
 		<script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.4"></script>
-		<script type="text/javascript" src="js/backstretch.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+		<script src="js/main.js"></script>
 		
-		        
+		
+		
+		<!-- Start Google Analytics -->
+		<script>
+		    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		    s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+
+        
     </body>
 </html>
